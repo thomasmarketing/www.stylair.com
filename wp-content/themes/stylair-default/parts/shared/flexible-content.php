@@ -189,7 +189,7 @@
 									<div  class="<?php if (get_sub_field('number_columns') == '2') {
 											echo 'col-sm-6';
 										} else if (get_sub_field('number_columns') == '3') {
-										        echo 'col-md-4';
+										        echo ' col-sm-6 col-md-4 img-grid-cust' ;
 										} else if (get_sub_field('number_columns') == '4') {
 										        echo 'col-sm-6 col-lg-3';
 										}
