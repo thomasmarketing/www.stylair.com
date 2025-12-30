@@ -926,7 +926,6 @@
     slidesToShow: 3,
     slidesToScroll: 1,
     infinite: true,
-    autoplay:false,
     responsive: [
     {
       breakpoint: 1200,
@@ -955,13 +954,7 @@
   $('.bhcg-listing-slider .slick-slide.slick-active:not(:last-of-type) a:last-of-type').blur(function() {
        $('.slick-next').trigger('click');
    });
- $('.bhcg-listing-slider button.slick-prev.slick-arrow,.bhcg-listing-slider button.slick-next.slick-arrow').wrapAll('<div class="slick-arrow-wrap"></div>');
-    // Move the wrapped arrows into .pm-header-wrap
-    $('.bhcg-content-wrap').append($('.slick-arrow-wrap'));
-
 });
-
-
 
 
 //tab content slider module
@@ -1241,47 +1234,13 @@ $(document).ready(function () {
   });
 
 
-  $(document).ready(function() {
-     $('.shm-slider').slick({
-      centerPadding: '20px',
-      slidesToShow: 4,
-      arrows: true,
-      dots: false,
-      responsive: [
-        {
-          breakpoint: 1400,
-          settings: {
-            arrows: true,
-            slidesToShow: 3
-          }
-        },
-          {
-          breakpoint: 1200,
-          settings: {
-            arrows: true,
-            slidesToShow: 2
-          }
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            arrows: true,
-            centerPadding: '0',
-            slidesToShow: 1
-          }
-        }
-      ]
-    });
-  });
-
   $(window).on('load', function() {
     
     // Added recaptcha *
     $('.ginput_recaptcha').parent('.gfield').children('.gfield_label').append('<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span>');
   });
 
-  
-
+   
 
 
   $(document).on('ready', function() {

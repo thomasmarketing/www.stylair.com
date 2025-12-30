@@ -539,7 +539,6 @@
 					<div class="cwc-container">
 						<div class="container">
 							<div class="row">
-							<?php $animation = get_sub_field('animation_style') != 'none' ? get_sub_field('animation_style') . ' animated' : ''; ?>
 								<div class="carousel-content wow fadeInLeft <?php echo $animation; ?>">
 									<?php if (get_sub_field('cwc_title')): ?>
 							    		<h1 class="cwc-title"><?php echo get_sub_field('cwc_title'); ?></h1>
