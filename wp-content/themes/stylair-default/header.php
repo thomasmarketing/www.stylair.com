@@ -15,6 +15,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+	<?php if(get_field('code_just_after_head_tag_starts','options')):?>
+    	<?php echo get_field('code_just_after_head_tag_starts','options'); ?>
+    <?php endif;?>
 	<?php if( get_field('ga_on_off','options') == true ): ?>
 		<?php if( get_field('ga_gtm_code','options')): ?>
 			<!-- Google Tag Manager -->
